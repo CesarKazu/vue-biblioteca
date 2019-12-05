@@ -32,6 +32,11 @@ export default new Router({
       path: '/Login',
       name: 'login',
       component: () => import('./views/Login.vue')
+    },
+    {
+      path: '/reservar-livro',
+      name: 'reservar-livro',
+      component: () => import('./views/Reservar-Livro.vue')
     }
   ]
 })

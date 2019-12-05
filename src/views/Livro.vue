@@ -12,16 +12,18 @@
           </div>
           <div class="form-group">
             <label for="descricao">Descrição</label>
-            <input type="text" id="descricao" class="form-control" required autofocus v-model="descricao">
+            <textarea class="form-control" id="descricao" rows="3" required v-model="descricao"></textarea>
           </div>
           <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
         </form>
       </div>
       <div class="col-sm-8">
-        <table class="table">
-          <thead class="thead-dark">
+        <table class="table table-striped">
+          <thead>
             <tr>
               <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Descrição</th>
               <th scope="col">Nome</th>
               <th scope="col">Descrição</th>
             </tr>
@@ -31,11 +33,8 @@
               <td scope="row">{{ l.id }}</td>
               <td>{{ l.nome }}</td>
               <td>{{ l.descricao }}</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-xs" @click="alterar(l.id)">Alterar</button>
-                <br>
-                <button type="button" class="btn btn-danger btn-xs" @click="excluir(l.id)">Deletar</button>
-              </td>
+              <td width="1%"><button type="button" class="btn btn-warning btn-sm" @click="alterar(l.id)">Alterar</button></td>
+              <td width="1%"><button type="button" class="btn btn-danger btn-sm" @click="excluir(l.id)">Deletar</button></td>
             </tr>
           </tbody>
         </table>

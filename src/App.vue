@@ -5,6 +5,7 @@
        <router-link to="/livro">Livro</router-link> | 
       <router-link to="/contatos">Contatos</router-link> | 
       <router-link to="/usuario">Usuário</router-link> | 
+      <router-link to="/reservar-livro">Reservar</router-link> | 
       <a v-if="usuario" @click="logout">Logout</a> 
       <router-link v-if="!usuario" to="/login">Login</router-link>
     </div>
@@ -15,6 +16,7 @@
 <script>
 import { mapState } from 'vuex'
 import { mapMutations } from 'vuex'
+import { constants } from 'crypto';
 
 export default {
   name: 'app',
