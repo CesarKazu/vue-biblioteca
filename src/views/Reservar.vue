@@ -48,7 +48,7 @@
     },
     methods: {
       reservar(livro) {
-        axios.post('livro/reserva', {
+        axios.post('reserva/cadastrar', {
               data: new Date(),
               livro: livro,
               usuario: this.usuario
