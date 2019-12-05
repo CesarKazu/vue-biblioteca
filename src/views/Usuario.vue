@@ -50,7 +50,7 @@
             "nome": "ROLE_USUARIO"
           }]
         }
-        axios.post('contato/save', newUsuario, {})
+        axios.post('usuario/save', newUsuario, {})
           .then(res => {
             this.nome = ''
             this.senha = ''

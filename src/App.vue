@@ -1,11 +1,9 @@
 <template>
   <div id="app" class="container">
     <div id="nav" class="row text-center">
-      <router-link to="/">Home</router-link> | 
-       <router-link to="/livro">Livro</router-link> | 
-      <router-link to="/contatos">Contatos</router-link> | 
+      <router-link to="/livro">Livro</router-link> | 
+      <router-link to="/reservar">Reservar</router-link> | 
       <router-link to="/usuario">Usuário</router-link> | 
-      <router-link to="/reservar-livro">Reservar</router-link> | 
       <a v-if="usuario" @click="logout">Logout</a> 
       <router-link v-if="!usuario" to="/login">Login</router-link>
     </div>

@@ -34,9 +34,9 @@ export default new Router({
       component: () => import('./views/Login.vue')
     },
     {
-      path: '/reservar-livro',
-      name: 'reservar-livro',
-      component: () => import('./views/Reservar-Livro.vue')
+      path: '/reservar',
+      name: 'reservar',
+      component: () => import('./views/Reservar.vue')
     }
   ]
 })
